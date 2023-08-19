@@ -30,8 +30,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "spr_inimigo",
+    "path": "folders/Sprites/spr_inimigo.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

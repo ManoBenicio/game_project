@@ -212,9 +212,9 @@ function scr_personagem_arco(){
 		}else if image_index >= 3 && image_index < 4{
 			forca = 140;
 		}else if image_index >= 4 && image_index < 5{
-			forca = 200;
+			forca = 180;
 		}else if image_index >= 5 && image_index <=6{
-			forca = 250;
+			forca = 220;
 		}
 					var _dir = point_direction(x, y, mouse_x, mouse_y);
 					var _xx = lengthdir_x(5, _dir);
