@@ -6,8 +6,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objetos",
-    "path": "folders/Objetos.yy",
+    "name": "obj_rooms",
+    "path": "folders/Objetos/obj_rooms.yy",
   },
   "parentObjectId": null,
   "persistent": false,

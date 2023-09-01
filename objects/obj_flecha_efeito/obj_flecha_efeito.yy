@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objetos",
-    "path": "folders/Objetos.yy",
+    "name": "obj_sem_sprite",
+    "path": "folders/Objetos/obj_sem_sprite.yy",
   },
   "parentObjectId": null,
   "persistent": false,

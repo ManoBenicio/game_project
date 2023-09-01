@@ -13,8 +13,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objetos",
-    "path": "folders/Objetos.yy",
+    "name": "obj_mobs",
+    "path": "folders/Objetos/obj_mobs.yy",
   },
   "parentObjectId": null,
   "persistent": false,

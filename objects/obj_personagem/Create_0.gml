@@ -40,6 +40,7 @@ vida = max_vida;
 
 tomardano = true;
 empurrar_dir = 0;
+empurrar_forca = 3;
 
 dano = 1;
 atacar = false;
@@ -50,3 +51,4 @@ arma = 0;
 
 puxar = false;
 forca = 0;
+

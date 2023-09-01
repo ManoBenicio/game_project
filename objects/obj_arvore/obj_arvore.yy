@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objetos",
-    "path": "folders/Objetos.yy",
+    "name": "obj_tiles",
+    "path": "folders/Objetos/obj_tiles.yy",
   },
   "parentObjectId": {
     "name": "obj_parede",

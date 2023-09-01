@@ -4,7 +4,7 @@ randomize();
 
 
 //MOVIMENTAÇÃO
-estado = scr_slime_escolher_estado();
+estado = scr_slime_escolher_estado;
 prox_estado = 0;
 
 hveloc = 0;

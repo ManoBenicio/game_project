@@ -24,6 +24,9 @@ function scr_personagem_colisao(){
 
 function scr_personagem_andando(){
 	// MOVIMENTAÇÃO
+	
+	
+	
 	direita = keyboard_check(ord("D"));
 	cima = keyboard_check(ord("W"));
 	esquerda = keyboard_check(ord("A"));
@@ -68,15 +71,31 @@ function scr_personagem_andando(){
 		switch dir{
 			default:
 				sprite_index = spr_personagem_correndo_direita;
+				if alarm[4] <= 0{
+				audio_play_sound(som_andar, 0, 0);
+				alarm[4] = 25;
+				}
 			break;
 			case 1:
 				sprite_index = spr_personagem_correndo_cima;
+				if alarm[4] <= 0{
+				audio_play_sound(som_andar, 0, 0);
+				alarm[4] = 25;
+				}
 			break;
 			case 2:
 				sprite_index = spr_personagem_correndo_esquerda;
+				if alarm[4] <= 0{
+				audio_play_sound(som_andar, 0, 0);
+				alarm[4] = 25;
+				}
 			break;
 			case 3:
 				sprite_index = spr_personagem_correndo_baixo;
+				if alarm[4] <= 0{
+				audio_play_sound(som_andar, 0, 0);
+				alarm[4] = 25;
+				}
 			break;
 		}
 	}
@@ -125,6 +144,12 @@ function scr_personagem_andando(){
 // DASH
 
 function scr_personagem_dash(){
+	
+	if alarm[5] <= 0{
+	audio_play_sound(som_dashh, 0, 0);
+	alarm[5] = 15;
+	}
+	
 	tomardano = false;
 	
 	hveloc = lengthdir_x(dash_veloc, dash_dir);
@@ -140,6 +165,9 @@ function scr_personagem_dash(){
 //ATACANDO
 
 function scr_personagem_atacando(){
+	if image_index == 1 {
+		audio_play_sound(som_atacar, 0, 0);	
+	}
 	if image_index >= 1{
 		if atacar == false {
 			switch dir{
@@ -168,8 +196,9 @@ function scr_personagem_atacando(){
 
 function scr_personagem_hit(){
 	if alarm[2] > 0{
-		hveloc = lengthdir_x(3, empurrar_dir);
-		vveloc = lengthdir_y(3, empurrar_dir);
+		
+		hveloc = lengthdir_x(empurrar_forca, empurrar_dir);
+		vveloc = lengthdir_y(empurrar_forca, empurrar_dir);
 	
 		scr_personagem_colisao();
 	}else{
