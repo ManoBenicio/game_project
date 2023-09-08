@@ -272,3 +272,4 @@ function scr_personagem_arco(){
 		}
 	}
 }
+//TESTANDO CARALHO
