@@ -1,5 +1,6 @@
 /// @description Inserir descrição aqui
 // Você pode escrever seu código neste editor
+if !instance_exists(obj_name_boss){
 
 var _escala = 3;
 var _guia = display_get_gui_height();
@@ -14,14 +15,15 @@ var _maxestamina = obj_personagem.max_estamina;
 
 //HUD
 
+draw_set_font(fnt_dano);
 draw_sprite_ext(spr_hud_vida, 0, 0, _huda, _escala, _escala, 0, c_white, 1);
 
 //Barra da vida
-
+draw_set_font(fnt_dano);
 draw_sprite_ext(spr_hud_barra_vida, 0, 0, _huda, (_vida/_maxvida) * _escala, _escala, 0, c_white, 1);
 
 //Barra da stamina
-
+draw_set_font(fnt_dano);
 draw_sprite_ext(spr_hud_barra_estamina, 0, 0, _huda + 24, (_estamina/_maxestamina) * _escala, _escala, 0, c_white, 1);
 
 draw_text(55, (_huda + 15), string(obj_personagem.estamina) + "/100");
@@ -57,7 +59,8 @@ if instance_exists(obj_boss3){
 	
 	draw_sprite_ext(spr_boss_hud, 0, _gl/2 - _sprw/2, 100, _escala, _escala, 0, c_white, 1);
 	draw_sprite_ext(spr_boss_vida, 0, _gl/2 - _sprw/2 + 6, 100, obj_boss3.vida/obj_boss3 .vida_max *_escala, _escala, 0, c_white, 1);
-	
+	draw_text( _gl/2, 150, "Reaper");
+}
 }
 
 

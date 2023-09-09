@@ -1,4 +1,4 @@
- sala = Room4;
+sala = Room4;
 personagemx = 560;   
 personagemy = 770;
 

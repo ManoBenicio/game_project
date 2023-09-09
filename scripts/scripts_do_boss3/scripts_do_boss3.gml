@@ -4,10 +4,19 @@ function scr_boss3_nascendo(){
 	image_speed = 1;
 	sprite_index = spr_nascendo_boss3; // Define o sprite atual
 	
+	var treme = instance_create_layer(x,y, "Instances", obj_treme);
+	
+	if image_index <= 14{	
+		treme.treme = 15;
+	}else{
+		treme.treme = 50;
+	}
+	
 	camera.x = lerp(x, obj_boss3. x, 0.05);
 	camera.y = lerp(y, obj_boss3. y, 0.05);
 	if fim_da_animacao(){
 		estado = scr_boss3_perseguindo;
+		instance_create_layer(x,y, "Instances", obj_name_boss);
 	}
 }
 

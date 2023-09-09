@@ -32,3 +32,7 @@ if distance_to_object(obj_par_npcs) <= 10{
 	}
 }
 
+if vida <= 0{
+	//instance_create_layer(x,y,"Instances",obj_morte);
+}
+
