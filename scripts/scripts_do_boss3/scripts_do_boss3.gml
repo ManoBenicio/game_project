@@ -145,3 +145,5 @@ function scr_boss3_hit(){
 	
 	scr_boss3_colisao();
 }
+
+//TESTE.MP3
